@@ -11,7 +11,7 @@
 .thumbnail {
     position: relative;
     display: inline-block;
-    margin-right: 30px;
+    margin-right: 10px;
   }
   
   .thumbnail img {
@@ -29,9 +29,10 @@
     overflow-x: auto;
     overflow-y: hidden;
     width: 100%;
-    padding: 10px 0;
+    padding: 20px 0;
   }
   body {
+    background-color: #eee;
     background-color: #ffffff;
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 12px;
@@ -50,6 +51,7 @@
     margin-bottom: 30px; 
     position: relative;
   }
+
   .hero h1 {
     font-size: 6rem;
     font-weight: 800;
@@ -57,13 +59,14 @@
     text-shadow: 2px 2px #000;
   }
   @media only screen and (max-width: 767px) {
-    .hero h1 {
-      font-size: 24px;
-    }
-  }  
+.hero h1 {
+  font-size: 24px;
+}
+}
   .section-title {
     font-size: 1rem;
     font-weight: 600;
+    margin-bottom: 13px;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #444;
@@ -71,6 +74,12 @@
   }
   .timeline {
     margin-bottom: 10px;
+  }
+  .timeline li {
+    position: relative;
+    margin-left: 80px;
+    margin-bottom: 12px;
+    list-style: none;
   }
   footer {
     background-color: #333;
