@@ -4,7 +4,7 @@ document.querySelector('.play-button').addEventListener('click', function () {
     blackOverlay.style.visibility = 'visible';
     blackOverlay.style.opacity = 1;
   
-    const nextPageUrl = 'interactive/i_1.html';
+    const nextPageUrl = 'Interactive/I_1.html';
   
     // 암전이 끝난 후 페이지 이동을 실행합니다.
     setTimeout(function () {
