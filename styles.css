@@ -16,6 +16,9 @@
 .icon-link.volt {
   left: -30px;
 }
+.icon-link.youtube {
+  left: -40px;
+}
 .play-button-wrapper {
   display:flex;
   justify-content: center;

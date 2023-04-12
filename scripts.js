@@ -12,6 +12,14 @@ document.querySelector('.play-button').addEventListener('click', function() {
     blackOverlay.style.opacity = 1;
   }, 10);
 
+  setTimeout(function() {
+    blackOverlay.style.opacity = 0;
+    setTimeout(function() {
+      blackOverlay.style.visibility = 'hidden';
+      blackOverlay.style.display = 'none';
+    }, 1500);
+  }, 1500);
+
   // 페이지 이동
   const nextPageUrl = 'Interactive/I_1.html';
   setTimeout(function() {
