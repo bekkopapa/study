@@ -1,7 +1,7 @@
 document.querySelector('.play-button').addEventListener('click', function() {
-  const blackOverlay = document.getElementById('blackOverlay');
   const playButton = document.querySelector('.play-button');
-
+  const blackOverlay = document.getElementById('blackOverlay');
+  
   // 이미지 변경
   playButton.querySelector('img').src = 'icons/button_2.png';
 
