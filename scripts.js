@@ -21,7 +21,7 @@ document.querySelector('.play-button').addEventListener('click', function() {
   }, 1500);
 
   // 페이지 이동
-  const nextPageUrl = 'Interactive/I_1.html';
+  const nextPageUrl = 'Interactive/ir_1.html';
   setTimeout(function() {
     window.location.href = nextPageUrl;
   }, 1000);
