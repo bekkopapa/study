@@ -35,11 +35,20 @@
             .btn {
         margin: 0 70px; /* 원하는 간격으로 조절하세요 */
         }
+        @media (max-width: 768px) {
+        .line {
+            font-size: 16px;
+        }
+        .btn {
+            margin: 0 20px;
+            font-size: 14px;
+        }
+        }
     </style>
 </head>
 <body>
     <div id="text-container">
-        <p class="line" style="animation-delay: 0.5s;">별 일 없는 하루... 잠이나 자자...</p>
+        <p class="line" style="animation-delay: 0.5s;">오늘도 별 일 없는 하루네... 잠이나 자자...</p>
     </div>
     <div class="buttons" id="buttons-container">
         <a href="ir_1.html" class="btn btn-primary" role="button">다시 처음부터</a>
