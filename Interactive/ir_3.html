@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interactive novel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70vh;
+            flex-direction: column;
+        }
+        .line {
+            opacity: 0;
+            animation: appear 2s forwards;
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+        @keyframes appear {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .buttons {
+            display: none;
+            margin-top: 30px;
+        }
+            .btn {
+        margin: 0 70px; /* 원하는 간격으로 조절하세요 */
+        }
+        .home-button-container {
+        position: absolute;
+        bottom: 20px;
+    }
+    @media (max-width: 768px) {
+        .line {
+            font-size: 16px;
+            margin-bottom: 70px;
+        }
+        .btn {
+            margin: 0 20px;
+            font-size: 14px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <div id="text-container">
+        <p class="line" style="animation-delay: 0s;">분리수거장 옆 벤치에 앉아서 연신 담배 연기를 뿜는다.</p>
+        <p class="line" style="animation-delay: 2s;">그런데 멀찌감치 보이는 어느 집 창가에 흐릿하니 뭔가 보인다.</p>
+        <p class="line" style="animation-delay: 4s;">"저게 뭐지?"</p>
+
+    </div>
+    <div class="buttons" id="buttons-container">
+        <a href="ir_4.html" class="btn btn-primary" role="button">가까이 가본다</a>
+        <a href="ir_end.html" class="btn btn-secondary" role="button">못본 척 한다</a>
+    </div>
+    <div class="home-button-container">
+        <a href="/index.html" class="btn btn-warning" role="button">Home</a>
+    </div>
+    <script>
+        const textContainer = document.getElementById('text-container');
+        const buttonsContainer = document.getElementById('buttons-container');
+
+        const lines = textContainer.getElementsByClassName('line');
+        const lastLine = lines[lines.length - 1];
+
+        lastLine.addEventListener('animationend', () => {
+            buttonsContainer.style.display = 'block';
+        });
+        function randomMargin(lines) {
+    for (const line of lines) {
+        const randomMargin = Math.floor(Math.random() * 150); // 원하는 범위로 조절하세요
+        line.style.marginLeft = `${randomMargin}px`;
+    }
+}
+
+randomMargin(lines);
+
+    </script>
+</body>
+</html>
