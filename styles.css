@@ -1,3 +1,6 @@
+    body {
+    user-select: none;
+    }
     .icon-link img {
     width: 50px; /* 아이콘 크기 조절 */
     height: auto;
