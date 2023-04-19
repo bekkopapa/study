@@ -95,7 +95,7 @@
     }
     @media (max-width: 768px) {
     table, thead, tbody, th, td, tr {
-      font-size: xx-small;
+      font-size: 13px;
 
     }
     h1 {
