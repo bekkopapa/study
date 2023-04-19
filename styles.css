@@ -84,7 +84,7 @@
  
     /* 링크 스타일 변경 */
     a {
-      color: rgb(251, 251, 253)색상 변경 */
+      color: rgb(128, 128, 255);
       text-decoration: none; /* 밑줄 제거 */
     }
   
@@ -95,7 +95,7 @@
     }
     @media (max-width: 768px) {
     table, thead, tbody, th, td, tr {
-      font-size: 14px;
+      font-size: xx-small;
 
     }
     h1 {
