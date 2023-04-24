@@ -45,6 +45,8 @@
         margin: 0 70px; /* 원하는 간격으로 조절하세요 */
         position: relative; /* 추가 */
         top: 10px; /* 버튼을 10px 아래로 이동 */
+        margin: 0 20px;
+        font-size: 14px;
             }
 
         #line-container {
@@ -106,14 +108,28 @@
         justify-content: center;
         align-items: center;
         }
+        footer {
+        position: absolute;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 30px;
+        bottom: 20px;
+        }
+        footer p {
+        font-size: 0.8rem;
+        }
+        .Home {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        margin-right: 20px;
+        }
+        .Home:hover {
+        color: rgb(255, 255, 255);  
+        }
         @media (max-width: 768px) {
         .line {
             font-size: 16px;
             margin-bottom: 30px;
-        }
-        .btn {
-            margin: 0 20px;
-            font-size: 14px;
         }
         }
 
@@ -123,11 +139,11 @@
     <div id="text-container">
         <div id="bg-img"></div>
         <div id="text-wrapper">
-          <p class="line" style="animation-delay: 2s;">아파트 저층부의 어느 집, 작은방 쪽의 창에 바짝 붙어 서 있는 여자가 보였다.</p>
-          <p class="line" style="animation-delay: 4s;">여자는 웃고 있었다.</p>
-          <p class="line" style="animation-delay: 6s;">착각인지 진짜 그런 건지 입이 길게, 거의 귀까지 찢어진 것처럼 보였다.</p>
-          <p class="line" style="animation-delay: 8s;">내가 놀란 것은 그 소름 끼치는 웃음 때문만은 아니었다.</p>
-          <p class="line" style="animation-delay: 10s;">길게 찢긴 입술 사이로, 길게 비어져 나와 턱까지 늘어진 혀가 보였기 때문이다.</p>
+          <p class="line" style="animation-delay: 2s;">아파트 저층부의 어느 집<br>작은방 쪽의 창에 바짝 붙어 서 있는 여자가 보였다.</p>
+          <p class="line" style="animation-delay: 5s;">여자는 웃고 있었다.</p>
+          <p class="line" style="animation-delay: 8s;">착각인지 진짜 그런 건지 입이 길-게<br>거의 귀까지 찢어진 것처럼 보였다.</p>
+          <p class="line" style="animation-delay: 11s;">내가 놀란 것은 그 소름 끼치는 웃음 때문만은 아니었다.</p>
+          <p class="line" style="animation-delay: 14s;">길게 찢긴 입술 사이로<br>비어져 나와 턱까지 늘어진 혀가 보였기 때문이다.</p>
         </div>
     <div class="buttons" id="buttons-container">
         <a href="ir_6.html" class="btn btn-primary" role="button">그런데 더 심각한 문제는..........</a>
@@ -155,4 +171,5 @@ randomMargin(lines);
 
     </script>
 </body>
+<footer><p><a href="/index.html" class="Home">&copy; 2023 - SOHYUNSOO </a></p></footer>
 </html>
