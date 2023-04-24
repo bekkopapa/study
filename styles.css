@@ -1,27 +1,6 @@
     body {
     user-select: none;
     }
-    .icon-link img {
-    width: 50px; /* 아이콘 크기 조절 */
-    height: auto;
-    }
-    .icon-container {
-    position: absolute;
-    left: 20px;
-    top: 30px;
-    }
-    .icon-link {
-    position: relative;
-    }
-    .icon-link.facebook {
-    margin-right: 20px;
-    }
-    .icon-link.volt {
-    left: -30px;
-    }
-    .icon-link.youtube {
-    left: -40px;
-    }
     .play-button-wrapper {
       display:flex;
       justify-content: left;
@@ -30,14 +9,12 @@
       margin-left: 165px;
     }
     .play-button {
-      width: 70px;
+      width: 60px;
       height: auto;
       position: relative;
     }
     .play-button img {
       position: relative;
-      top: 0;
-      left: 0;
       width: 100%;
       height: 100%;
       transition: all 0.6s ease;
@@ -87,7 +64,14 @@
       color: rgb(128, 128, 255);
       text-decoration: none; /* 밑줄 제거 */
     }
-  
+    .special-link {
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+  }
+  .special-link:hover {
+      color: rgb(255, 255, 255);
+  }
+    
     /* 링크에 마우스를 올렸을 때의 스타일 변경 */
     a:hover {
       color: rgb(255, 255, 255); /* 글자 색상 변경 */

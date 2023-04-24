@@ -10,26 +10,32 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="play-button-wrapper">
+  <nav class="container">
+    <ul>
+      <li>
+        <details role="list">
+          <summary aria-haspopup="listbox" role="link"></summary>
+          <ul role="listbox">
+            <li><a>Action</a></li>
+            <li><a>Another action</a></li>
+            <li><a>Something else here</a></li>
+          </ul>
+        </details>
+      </li>    
+    </ul>
+    <ul>
+      <li><p><a href="index.html" class="special-link">SOHYUNSOO.xyz</a></p></li>
+    </ul>
+    <ul>
+      <li>  <div class="play-button-wrapper">
         <div class="play-button">
           <img src="icons/button_1.png" alt="버튼_1">
         </div></a>
       <div class="black-overlay" id="blackOverlay"></div>
-      </div>
-    <header><h1>SOHYUNSOO.xyz</h1></header>
-    <div class="icon-container">
-        <a href="https://www.facebook.com/so.hyunsoo" target="_blank" class="icon-link facebook">
-          <img src="icons/facebook-icon.png" alt="페이스북 아이콘">
-        </a>
-        <a href="tesla.html" class="icon-link volt">
-          <img src="icons/volt.png" alt="볼트 아이콘">
-        </a>
-        <a href="https://youtu.be/EMdeFD448d0" target="_blank" class="icon-link youtube">
-          <img src="icons/youtube_icon.png" alt="유튜브 아이콘">
-        </a>
-      </div>
-    </div>
-    <main class="container">
+      </div>  </li>
+    </ul>
+  </nav>   
+  <main class="container">
         <label for="SOHYUNSOO">WHO AM I?</label>
         <select id="SOHYUNSOO">
             <option value="" selected>Select a Identity…</option>
