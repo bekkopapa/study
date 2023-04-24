@@ -1,15 +1,19 @@
     body {
     user-select: none;
     }
+    .icon-link img {
+      width: 60px; /* 아이콘 크기 조절 */
+      height: auto;
+    }
     .play-button-wrapper {
       display:flex;
-      justify-content: left;
+      justify-content: center;
       margin-top: 20px;
       margin-bottom: 10px;
-      margin-left: 165px;
+      margin-left: 0px;
     }
     .play-button {
-      width: 60px;
+      width: 110px;
       height: auto;
       position: relative;
     }
@@ -35,12 +39,6 @@
       transition: opacity 1s; /* 암전 시간을 조절하려면 이 값을 변경하세요. */
       z-index: 9999;
     }
-    header  {
-        text-align: center;
-        margin-top: 20px;
-        margin-bottom: -70px;
-    }
-    
     footer {
         text-align: center;
         padding: 20px 0;
@@ -67,6 +65,7 @@
     .special-link {
       color: rgb(255, 255, 255);
       text-decoration: none;
+      margin-right: 20px;
   }
   .special-link:hover {
       color: rgb(255, 255, 255);
