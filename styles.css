@@ -62,15 +62,6 @@
       color: rgb(128, 128, 255);
       text-decoration: none; /* 밑줄 제거 */
     }
-    .special-link {
-      color: rgb(255, 255, 255);
-      text-decoration: none;
-      margin-right: 20px;
-  }
-  .special-link:hover {
-      color: rgb(255, 255, 255);
-  }
-    
     /* 링크에 마우스를 올렸을 때의 스타일 변경 */
     a:hover {
       color: rgb(255, 255, 255); /* 글자 색상 변경 */

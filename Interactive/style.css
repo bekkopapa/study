@@ -38,14 +38,6 @@ bottom: 20px;
 footer p {
 font-size: 0.8rem;
 }
-.Home {
-color: rgb(255, 255, 255);
-text-decoration: none;
-margin-right: 20px;
-}
-.Home:hover {
-color: rgb(255, 255, 255);  
-}
 
 @media (max-width: 768px) {
 .line {

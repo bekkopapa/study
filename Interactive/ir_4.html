@@ -36,5 +36,12 @@ randomMargin(lines);
 
     </script>
 </body>
-<footer><p><a href="/index.html" class="Home">&copy; 2023 - SOHYUNSOO </a></p></footer>
+<footer><p id="Home">&copy; 2023 - SOHYUNSOO</p></footer>
+<script>
+    const footer = document.getElementById("Home");
+    function home(){
+        location.href="/index.html";
+        }
+    footer.addEventListener("click", home);
+</script>
 </html>

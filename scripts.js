@@ -27,6 +27,17 @@ $('.play-button').on('click', function() {
   }, 1000);
 });
 
+function titleClick() {
+  location.href = "index.html";
+}
+
+$(document).ready(function() {
+  $("#title").click(function() {
+    titleClick();
+  });
+});
+
+
 function loadTable(url, callback) {
   $.ajax({
       url: url,
