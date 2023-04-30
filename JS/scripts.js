@@ -51,16 +51,16 @@ $('#SOHYUNSOO').on('change', function(event) {
   var tableContainer = $('#table-container');
 
   if (event.target.value === 'novelist') {
-      loadTable('novelist_table.html', function(responseText) {
+      loadTable('/novelist_table.html', function(responseText) {
           tableContainer
           .html(responseText);
         });
     } else if (event.target.value === 'screenwriter') {
-        loadTable('screenwriter_table.html', function(responseText) {
+        loadTable('/screenwriter_table.html', function(responseText) {
             tableContainer.html(responseText);
         });
     } else if (event.target.value === 'stereographer') {
-        loadTable('stereographer_table.html', function(responseText) {
+        loadTable('/stereographer_table.html', function(responseText) {
             tableContainer.html(responseText);
         });
     } else {
