@@ -12,27 +12,24 @@
     </div>
     <script>
         const textContainer = document.getElementById('text-container');
+        const buttonsContainer = document.getElementById('buttons-container');
         const lines = textContainer.getElementsByClassName('line');
-        const lastLine = lines[lines.length - 1];
 
-        lastLine.addEventListener('animationend', () => {
+        lines[lines.length - 1].addEventListener('animationend', () => {
             buttonsContainer.style.display = 'block';
         });
+
         function randomMargin(lines) {
-    for (const line of lines) {
-        const randomMargin = Math.floor(Math.random() * 150); // 원하는 범위로 조절하세요
-        line.style.marginLeft = `${randomMargin}px`;
+            for (const line of lines) {
+                line.style.marginLeft = `${Math.floor(Math.random() * 150)}px`;
+            }
+        }
+        randomMargin(lines);
 
         const nextPageUrl = 'ir_5.html';
         setTimeout(function() {
         window.location.href = nextPageUrl;
         }, 4000);
-        };
-
-
-        }
-
-randomMargin(lines);
 
     </script>
 </body>
