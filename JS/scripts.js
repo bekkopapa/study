@@ -106,4 +106,7 @@ $('#SOHYUNSOO').on('change', function(event) {
                 // Update quote when the dropdown menu selection changes
                 $('#SOHYUNSOO').on('change', updateQuote);
             });
+
+            const quoteArea = $("blockquote");
+            quoteArea.on("click", updateQuote);
  
