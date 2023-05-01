@@ -12,6 +12,10 @@ function getWeather(lat, lon) {
             const iconUrl = `https://openweathermap.org/img/wn/${iconCode}.png`;
             const icon = `<img src="${iconUrl}" alt="Weather Icon" class="weather-icon" />`;
             weatherContainer.innerHTML = `${icon} ${temp}`;
+            function weatherInfo(){
+                window.open("https://weather.naver.com/");
+            }
+            weatherContainer.addEventListener('click', weatherInfo);
         });
 }
 
@@ -29,3 +33,4 @@ function onGeoError() {
 }
 
 navigator.geolocation.getCurrentPosition(onGeoSuccess, onGeoError);
+
