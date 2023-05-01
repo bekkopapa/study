@@ -7,7 +7,7 @@ function getWeather(lat, lon) {
             const weatherContainer = document.getElementById("weather");
             const name = `<span class="weather-info">${data.name}</span>`;
             const weather = `<span class="weather-info">${data.weather[0].main}</span>`;
-            const temp = `<span class="weather-info">${data.main.temp}°C</span>`;
+            const temp = `<span class="weather-info">${Math.round(data.main.temp)}°C</span>`;
             const iconCode = data.weather[0].icon;
             const iconUrl = `https://openweathermap.org/img/wn/${iconCode}.png`;
             const icon = `<img src="${iconUrl}" alt="Weather Icon" class="weather-icon" />`;
