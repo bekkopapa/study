@@ -88,25 +88,18 @@ $('#SOHYUNSOO').on('change', function(event) {
             ];
     
             function getRandomQuote() {
-                const randomIndex = Math.floor(Math.random() * quotes.length);
-                const quote = quotes[randomIndex];
-                return quote;
-            }
-    
-            function updateQuote() {
-                const quote = getRandomQuote();
-                $('blockquote small').text(quote.text);
-                $('footer small').text(quote.author);
-            }
-    
-            $(document).ready(function() {
-                // Update quote when the page is loaded
-                updateQuote();
-    
-                // Update quote when the dropdown menu selection changes
-                $('#SOHYUNSOO').on('change', updateQuote);
-            });
-
-            const quoteArea = $("blockquote");
-            quoteArea.on("click", updateQuote);
- 
+              return quotes[Math.floor(Math.random() * quotes.length)];
+          }
+          
+          function updateQuote() {
+              const quote = getRandomQuote();
+              $('blockquote small').text(quote.text);
+              $('footer small').text(quote.author);
+          }
+          
+          $(document).ready(function() {
+              updateQuote();
+          });
+          
+          $('#SOHYUNSOO').on('change', updateQuote);
+          $('blockquote').on('click', updateQuote); 
